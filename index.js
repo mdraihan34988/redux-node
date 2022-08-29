@@ -9,7 +9,7 @@ store.subscribe(() => {
 // store.dispatch(fetchPost(10));
 const express = require('express')
 const app = express()
-const port = 9000
+const port = process.env.PORT || 3000
 
 app.get('/', async (req, res) => {
      res.send('Search post by id at the end of url . For example - /2 (Here 2 is post_id)')
