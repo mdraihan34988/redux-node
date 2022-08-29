@@ -12,7 +12,7 @@ const app = express()
 const port = process.env.PORT || 3000
 
 app.get('/', async (req, res) => {
-     res.send('Search post by id at the end of url . For example - /2 (Here 2 is post_id)')
+     res.send('Search post by id at the end of url . For example - https://node-redux-post-by-id.herokuapp.com/2 (Here 2 is post_id)')
 })
 
 app.get('/:postId', async (req, res) => {
